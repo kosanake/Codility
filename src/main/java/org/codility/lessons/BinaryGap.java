@@ -5,19 +5,19 @@ package org.codility.lessons;
  */
 public class BinaryGap {
 
-    public int solve(int number) {
+    public int solution(int N) {
 
         int index = 0;
         int max = 0;
         boolean start = false;
 
-        while (number != 0) {
+        while (N != 0) {
 
-            if ((number & 1) == 1)
+            if ((N & 1) == 1)
                 start = true;
 
             if (start) {
-                if ((number & 1) == 0) {
+                if ((N & 1) == 0) {
                     index++;
                 } else {
                     max = Math.max(max, index);
@@ -25,7 +25,7 @@ public class BinaryGap {
                 }
             }
 
-            number >>= 1;
+            N >>= 1;
         }
 
         return max;
