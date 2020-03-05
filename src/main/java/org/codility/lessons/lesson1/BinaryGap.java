@@ -1,4 +1,4 @@
-package org.codility.lessons;
+package org.codility.lessons.lesson1;
 
 /**
  * Lesson 1
